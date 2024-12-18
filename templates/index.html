@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<center>
+
+  <div class="bb bb2" >
+    <div style="margin:50px"  class="new-container">
+      <h4 class="text-left">Ask Anything ? </h4>
+      <p class="text-left">Gemini based Text generation </p>
+        <div class="upload-form">
+            <form action = "/uploader" method = "POST" 
+                              enctype = "multipart/form-data">
+                <input type = "text" name = "file" />
+                <input type = "submit"/>
+            </form>
+        </div>      
+        </div>
+    </div>
+    
+</center> 
+{% endblock %}

@@ -1,0 +1,96 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+
+<style>
+    table {
+        width: 300px;
+        border-collapse: collapse;
+        margin-top: 0px;
+    }
+    
+    table, th, td {
+        border: 1px solid black;
+    }
+    
+    thead {
+        background-color: #f2f2f2;
+    }
+    
+    th, td {
+        padding: 0px;
+        text-align: left;
+    }
+    
+    th {
+        height: 40px;
+    }
+    
+    tr:nth-child(even) {
+        background-color: #f9f9f9;
+    }
+  
+    .container {
+        max-width: 800px;
+        margin: auto;
+        background: white;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    h1 {
+        text-align: center;
+    }
+    p {
+        margin: 10px 0;
+    }
+    ul {
+        list-style-type: none;
+        padding: 0;
+    }
+    ul li {
+        margin: 10px 0;
+        padding-left: 20px;
+        text-indent: -20px;
+    }
+    ul li::before {
+        content: "• ";
+        color: #4CAF50;
+        font-weight: bold;
+    }
+    .note {
+        font-style: italic;
+        color: #555;
+    }
+ 
+    
+</style>
+
+
+
+<div class="container">
+    <div class="col upload-image-thumb">
+        <h4><b> Question :</b> {{question}}</h4>     
+    <h4 class="text-left bold">Response</h4>
+    <ul>
+        {% for item in response.split('*') if item.strip() %}
+        <li>{{ item.strip() }}</li>
+        {% endfor %}
+    </ul>
+</div>
+</div>
+<div class="bb" >
+<div style="margin:50px"  class="new-container">
+    <h4 class="text-left">Ask another?</h4>
+    <div class="upload-form" style="border :solid black 1px ; padding : 20px ; width: 500px">
+        <form action = "/uploader" method = "POST" 
+                          enctype = "multipart/form-data">
+            <input type = "text" name = "file" />
+            <input type = "submit"/>
+        </form>
+    </div>      
+    </div>
+</div>
+{% endblock %} 
+

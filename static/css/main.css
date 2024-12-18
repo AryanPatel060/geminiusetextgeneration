@@ -1,0 +1,69 @@
+/* 
+ * General
+ */
+
+
+
+body {
+  background-color: #f4f4f4;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  /* margin: 20px; */
+  color: #333;
+}
+
+
+
+/* 
+ * Header
+ */
+
+header {
+  background-color: #fff;
+  padding: 40px 0;
+}
+
+.title {
+  float: left;
+  font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  font-size: 17px;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  margin: 0px 20px;
+}
+
+.title a, .title a:visited {
+  color: #3a3a3a;
+}
+
+.upload-image-thumb {
+  margin: 20px;
+}
+.image-container {
+  margin: 0px;
+}
+
+.bb {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  font-family: Arial, sans-serif;
+  /* background-color: #f9f9f9; */
+}
+.bb2{
+  height: 80vh;
+}
+.new-center{
+
+      width: 80%;
+      max-width: 800px;
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      text-align: center;
+
+}
