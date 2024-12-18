@@ -1,4 +1,4 @@
-# geminiusetextgenerat
+# Gemini Use For Textgeneration
  flask (python) with Gemini for text input and response handling with python backend  
 
 # Home page for Prompt / Question input
