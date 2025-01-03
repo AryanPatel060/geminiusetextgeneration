@@ -8,10 +8,10 @@
 <img src="static\images\response.png" alt="">
 
 # Home page in flutterflow app for Prompt / Question input
-<img src="static\images\flutterflowhomepage.jpeg" alt="">
+<img src="static\images\flutterflowhomepage.jpeg" alt="" height="600px" >
 
 # response page in flutterflow app 
-<img src="static\images\flutterflowresponcepage.jpeg" alt="">
+<img src="static\images\flutterflowresponcepage.jpeg" alt=""  height="600px">
 
 
 This is only for education purpose:
