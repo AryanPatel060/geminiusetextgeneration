@@ -9,8 +9,8 @@ import re
 
 
 application = Flask(__name__)
-UPLOAD_FOLDER = './static/uploads'
-application.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER 
+ 
+APIKEY = "your api key"
 
 @application.route("/")
 def index():
@@ -26,7 +26,7 @@ def upload_file():
       f = request.form['file']
       print(f)
 
-      genai.configure(api_key="AIzaSyDjaIlr4X50nCHRZyOsMLhdPPVaysToek8")
+      genai.configure(api_key=APIKEY)
       model = genai.GenerativeModel("gemini-1.5-flash")
       response = model.generate_content(f)
       
