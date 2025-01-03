@@ -7,5 +7,12 @@
 # response which is generated from GEMINI
 <img src="static\images\response.png" alt="">
 
+# Home page in flutterflow app for Prompt / Question input
+<img src="static\images\flutterflowhomepage.jpeg" alt="">
+
+# response page in flutterflow app 
+<img src="static\images\flutterflowresponcepage.jpeg" alt="">
+
+
 This is only for education purpose:
 TO learn implimentation how gemini works with python as backend with flask api 

@@ -5,9 +5,6 @@ import os
 import google.generativeai as genai
 import re
 
-
-
-
 application = Flask(__name__)
  
 APIKEY = "your api key"
